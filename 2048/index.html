@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2048</title>
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <style>
+    html,body{
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      position: relative;
+      background: #bfbfff url("./img/body_bg.gif") repeat-x 0 bottom;
+    }
+    .wrap{
+      padding-top: 100px;
+    }
+    .wrap .middle{
+      width: 320px;
+      margin: 0 auto 0;
+      position: relative;
+    }
+    .scroe{
+      width: 262px;
+      height: 185px;
+      background: url("./img/scroe.png") no-repeat;
+      position: absolute;
+      top: -90px;
+      left: -100px;
+    }
+    p{
+      color: #fff;
+      font-size: 30px;
+      position: absolute;
+      top: -20px;
+      left: 90px;
+    }
+    span{
+      display: block;
+      width: 250px;
+      position: absolute;
+      right: -300px;
+      bottom: 50px;
+      color: #fff;
+      font-size: 12px;
+    }
+    .game{
+      width: 320px;
+      height: 436px;
+      background: url("./img/bg.png") no-repeat;
+    }
+    .game div{
+      width: 80px;
+      height: 109px;
+      float: left;
+    }
+    .game div img{
+      width: 80px;
+      height: 109px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="middle">
+      <div class="scroe">
+        <p>0</p>
+      </div>
+      <span>
+        玩法说明：<br>
+        1.用键盘上下左右键控制数字走向;<br>
+        2.当点击了一个方向时，格子中的数字会全部往那个方向移动，直到不能再移动，如果有相同的数字则会合并;<br>
+        3.当格子中不再有可移动和可合并的数字时，游戏结束;<br>
+      </span>
+      <div class="game">
+        <div>
+          <img value="0" src="./img/cube_0.png" alt="">
+        </div>
+        <div>
+          <img value="0" src="./img/cube_0.png" alt="">
+        </div>
+        <div>
+          <img value="0" src="./img/cube_0.png" alt="">
+        </div>
+        <div>
+          <img value="0" src="./img/cube_0.png" alt="">
+        </div>
+
+        <div>
+          <img value="0" src="./img/cube_0.png" alt="">
+        </div>
+        <div>
+          <img value="0" src="./img/cube_0.png" alt="">
+        </div>
+        <div>
+          <img value="0" src="./img/cube_0.png" alt="">
+        </div>
+        <div>
+          <img value="0" src="./img/cube_0.png" alt="">
+        </div>
+       
+        <div>
+          <img value="0" src="./img/cube_0.png" alt="">
+        </div>
+        <div>
+          <img value="0" src="./img/cube_0.png" alt="">
+        </div>
+        <div>
+          <img value="0" src="./img/cube_0.png" alt="">
+        </div>
+        <div>
+          <img value="0" src="./img/cube_0.png" alt="">
+        </div>
+
+        <div>
+          <img value="0" src="./img/cube_0.png" alt="">
+        </div>
+        <div>
+          <img value="0" src="./img/cube_0.png" alt="">
+        </div>
+        <div>
+          <img value="0" src="./img/cube_0.png" alt="">
+        </div>
+        <div>
+          <img value="0" src="./img/cube_0.png" alt="">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./index.js"></script>
+</html>
